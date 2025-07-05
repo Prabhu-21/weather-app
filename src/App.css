@@ -1,0 +1,102 @@
+/* Full-page flex center */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0404;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main wrapper */
+.app {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #005f87;
+}
+
+/* Weather card styling */
+.weather-card {
+  background: #1cedc3;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.weather-card h2 {
+  margin: 0 0 10px 0;
+  color: #000404;
+}
+
+/* Saved cities */
+.saved-cities {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.city-chip {
+  display: inline-block;
+  background: #e0f7fa;
+  color: #00796b;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+.city-chip button {
+  margin-left: 10px;
+  background: transparent;
+  color: #e53935;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
