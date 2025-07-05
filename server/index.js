@@ -10,24 +10,23 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Default Route (Optional)
 app.get("/", (req, res) => {
   res.send("🌍 Weather App Backend Running");
 });
 
-// MongoDB Connection
+// Mongo Connection
 mongoose
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    ssl: true, // ⚠️ Important for Atlas SSL compatibility
+    ssl: true,
   })
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) =>
     console.error("❌ MongoDB connection error:", err.message)
   );
 
-// GET all saved cities
+// GET City
 app.get("/api/cities", async (req, res) => {
   try {
     const cities = await City.find();
@@ -37,7 +36,7 @@ app.get("/api/cities", async (req, res) => {
   }
 });
 
-// Save a new city
+// Save
 app.post("/api/cities", async (req, res) => {
   const { name } = req.body;
   try {
@@ -53,7 +52,7 @@ app.post("/api/cities", async (req, res) => {
   }
 });
 
-// Delete a saved city
+// Delete
 app.delete("/api/cities/:name", async (req, res) => {
   try {
     await City.deleteOne({ name: req.params.name });
