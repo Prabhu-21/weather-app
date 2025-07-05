@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SavedCities from './components/SavedCities';
-import './App.css'; // ✅ Ensure this file exists
+import './App.css';
 
 function App() {
   const [city, setCity] = useState('');
@@ -18,7 +18,7 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`
       );
       setWeather(res.data);
-      setCity(''); // Clear input after successful fetch
+      setCity(''); 
       await saveCityToDB(res.data.name);
     } catch (error) {
       alert('City not found ❌');
@@ -86,7 +86,7 @@ function App() {
       <SavedCities
         cities={savedCities}
         onDelete={deleteCity}
-        onCityClick={handleCityClick} // ✅ Pass click handler
+        onCityClick={handleCityClick} 
       />
     </div>
   );
