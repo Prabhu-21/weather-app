@@ -21,7 +21,12 @@ This Weather App is a single-page application (SPA) built with **React.js** and 
 ---
 
 ## 🌐 Live Demo
-🚧 _Not deployed yet_  
+🚧 _Not deployed yet_
+
+---
+
+📽️ Watch the Demo Video on YouTube
+https://youtu.be/Hh1LuD08AC0  
 
 ---
 ## 📸 Screenshots
@@ -86,9 +91,6 @@ Adjusted layout for better viewing across different screen sizes.
 Handled cases like invalid city names and missing API responses.
 
 ---
-
-📽️ Watch the Demo Video on YouTube
-https://youtu.be/Hh1LuD08AC0
 
 🧪 Test Credentials
 Not applicable – no authentication used.
