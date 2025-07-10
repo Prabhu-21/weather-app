@@ -1,12 +1,94 @@
-# React + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Objective
+To build a responsive and user-friendly weather forecasting application that allows users to check real-time weather conditions of any city using a public API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📄 Project Description
+This Weather App is a single-page application (SPA) built with **React.js** and **Vite**. The goal was to learn API integration, React component structure, and dynamic UI updates based on external data. The app fetches live weather data from the **OpenWeatherMap API** and displays key weather information including:
 
-## Expanding the ESLint configuration
+- 🌡️ Temperature  
+- 💧 Humidity  
+- 🌥️ Weather condition  
+- 🌬️ Wind speed
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔗 GitHub Repository
+👉 [GitHub Link](https://github.com/Prabhu-21/weather-app)
+
+---
+
+## 🌐 Live Demo
+🚧 _Not deployed yet_  
+
+---
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](./screenshots/homepage.png)
+
+### 🔍 City Search
+![Search](./screenshots/city-search.png)
+
+### ❌ Error State
+![Error](./screenshots/error-state.png)
+
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ React.js (with Vite)
+- 📦 Axios (for HTTP requests)
+- 🎨 HTML5 & CSS3
+- 🌐 OpenWeatherMap API
+
+---
+
+## ⚙️ Setup Instructions
+
+### Clone the Repo
+```bash
+git clone https://github.com/Prabhu-21/weather-app.git
+cd weather-app
+
+---
+
+Install Dependencies
+bash
+Copy
+Edit
+npm install
+
+---
+
+🔐 Create a `.env` file in the root and refer to the `.env.example` for format.
+
+---
+
+Run the App
+bash
+Copy
+Edit
+npm run dev
+
+---
+
+🧠 Challenges Faced
+-🔐 API Key Security
+Initially pushed .env with a real key — quickly revoked the key and updated .gitignore to prevent this again.
+
+-📱 Responsive Design
+Adjusted layout for better viewing across different screen sizes.
+
+-❌ Error Handling
+Handled cases like invalid city names and missing API responses.
+
+---
+
+📽️ Watch the Demo Video on YouTube
+https://youtu.be/Hh1LuD08AC0
+
+🧪 Test Credentials
+Not applicable – no authentication used.
